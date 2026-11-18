@@ -36,8 +36,19 @@ vercel.json           Cabeçalhos de cache e segurança (se publicar na Vercel)
 ## Pendências de conteúdo
 
 - `[DATA DE ENCERRAMENTO]` da promoção (index.html)
-- `[ENDEREÇO DA CLÍNICA]` (index.html e llms.txt). Quando tiver, incluir também `address` no JSON-LD
+- `[RUA, NÚMERO]` (index.html e llms.txt). Quando tiver, completar `streetAddress` e `postalCode` no JSON-LD
+- Fotos dos casos reais (ver abaixo)
 - Apresentação do Dr. Matheus na seção "Sobre"
+
+## Casos reais (antes e depois)
+
+As fotos ficam em `assets/img/casos/`, no formato `caso-N-antes.webp` e `caso-N-depois.webp` (proporção 4:3, cerca de 800×600). Hoje são imagens provisórias: basta substituir os arquivos mantendo os nomes, e ajustar título, descrição e `alt` de cada caso no `index.html`.
+
+Antes de publicar cada caso (Resolução CFO 196/2019):
+- termo de consentimento (TCLE) assinado pelo paciente;
+- só o diagnóstico (antes) e o resultado final (depois), sem etapas do procedimento;
+- sem instrumentais, equipamentos ou materiais visíveis (ex.: afastador labial);
+- sem promessa de resultado.
 
 ## Trocar para o domínio definitivo
 

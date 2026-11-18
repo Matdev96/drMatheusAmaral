@@ -202,3 +202,25 @@ h1, h2, h3, p { margin: 0; }
   html { scroll-behavior: auto; }
   .faixa__track { animation: none; }
 }
+
+/* Casos reais — comparador antes/depois */
+.case { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line-2); border-radius: 20px; overflow: hidden; }
+.ba { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #1C150E; user-select: none; touch-action: pan-y; }
+.ba__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ba__before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.ba__handle { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none; }
+.ba__handle::after {
+  content: "‹ ›"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: var(--gold-grad); color: #1A120A; font-weight: 600; font-size: 18px; letter-spacing: 2px; box-shadow: 0 4px 14px rgba(0,0,0,.4);
+}
+.ba__range { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.ba__range:focus-visible + .ba__handle, .ba:focus-within .ba__handle { outline: none; }
+.ba:focus-within { outline: 2px solid var(--gold); outline-offset: -2px; }
+.ba__tag { position: absolute; top: 12px; padding: 4px 12px; border-radius: 999px; background: rgba(11, 9, 7, .75); color: var(--text); font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; pointer-events: none; }
+.ba__tag--before { left: 12px; }
+.ba__tag--after { right: 12px; }
+.case__body { padding: 24px 26px 18px; display: flex; flex-direction: column; gap: 8px; }
+.case__body h3 { font-family: var(--serif-2); font-weight: 500; font-size: 26px; line-height: 1.15; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
+.case__body p { color: var(--muted); font-size: 15px; }
+.cases__note { text-align: center; font-size: 13px; color: var(--muted-2); }
