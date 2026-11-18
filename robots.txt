@@ -1,0 +1,5 @@
+# Amaral de Almeida — Odontologia Estética
+User-agent: *
+Allow: /
+
+Sitemap: https://matdev96.github.io/drMatheusAmaral/sitemap.xml
