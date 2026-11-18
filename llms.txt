@@ -17,7 +17,7 @@
 
 ## Casos reais
 
-- A página mostra casos de antes e depois (facetas em resina composta, restauração estética, transformação do sorriso), divulgados com autorização dos pacientes.
+- A página mostra casos de antes e depois (facetas em resina composta, restauração estética, faceta em resina), divulgados com autorização dos pacientes.
 
 ## Harmonização orofacial
 

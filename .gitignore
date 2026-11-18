@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 .vercel
+
+# Originais das fotos dos casos (o site usa os .webp)
+assets/img/casos/*.png

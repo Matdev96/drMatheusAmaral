@@ -42,7 +42,7 @@ vercel.json           Cabeçalhos de cache e segurança (se publicar na Vercel)
 
 ## Casos reais (antes e depois)
 
-As fotos ficam em `assets/img/casos/`, no formato `caso-N-antes.webp` e `caso-N-depois.webp` (proporção 4:3, cerca de 800×600). Hoje são imagens provisórias: basta substituir os arquivos mantendo os nomes, e ajustar título, descrição e `alt` de cada caso no `index.html`.
+As fotos ficam em `assets/img/casos/`, no formato `caso-N-antes.webp` e `caso-N-depois.webp` (quadradas, 800×800). Os PNGs originais podem ficar na mesma pasta, mas não vão para o repositório (`.gitignore`). Para trocar uma foto, gere o WebP com o mesmo nome, e ajustar título, descrição e `alt` de cada caso no `index.html`.
 
 Antes de publicar cada caso (Resolução CFO 196/2019):
 - termo de consentimento (TCLE) assinado pelo paciente;
