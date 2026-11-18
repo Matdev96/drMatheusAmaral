@@ -224,3 +224,16 @@ h1, h2, h3, p { margin: 0; }
 .case__body h3 { font-family: var(--serif-2); font-weight: 500; font-size: 26px; line-height: 1.15; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
 .case__body p { color: var(--muted); font-size: 15px; }
 .cases__note { text-align: center; font-size: 13px; color: var(--muted-2); }
+
+/* Sobre — versão compacta */
+.section.about { padding: 64px 0; }
+.about .wrap { flex-direction: row; gap: 40px; }
+.about__logo { flex: 0 1 300px; }
+.about__text { flex: 1 1 420px; }
+.about__logo img { max-width: 280px; }
+.about__text { gap: 14px; }
+@media (max-width: 720px) {
+  .section.about { padding: 48px 0; }
+  .about .wrap { gap: 24px; }
+  .about__logo img { max-width: 200px; }
+}
